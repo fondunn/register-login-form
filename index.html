@@ -12,31 +12,39 @@
 <body>
 <div class="container">
         <div class="form">
-
             <div class="form-title">
-                <div class="form-title-logo">I</div>
+                <div class="form-title-logo"><img src="/img/logo.png" alt=""></div>
                 <h2>Login To Your Account / Register New</h2>
             </div>
-            
             <div class="form-body">
-
                 <div class="login-form">
-                    
                     <div class="horizontal-line">
-                        
                         <span>/</span>
-
                         <div class="line"></div>
-
                     </div>
                     
-                    <form action="">
-                        <input type="text" name="" id="" class="login-form-input" placeholder="User Name">
-                        <input type="password" name="" id="" class="login-form-input" placeholder="Password">
+                    <form name="loginForm" id="liginForm">
+                        <input  type="text" 
+                                id="loginUserName" 
+                                class="login-form-input" 
+                                placeholder="User Name" 
+                                >
+
+                        <input  type="password" 
+                                
+                                id="loginUserPassword" 
+                                class="login-form-input" 
+                                placeholder="Password" 
+                                value=""
+                                >
                             
+                        
+                        
                         <label for="rememberPassword" class="remember-pass-check">
                             
-                            <input type="checkbox" id="rememberPassword" class="btn-check">
+                        <input  type="checkbox" 
+                                id="rememberPassword" 
+                                class="btn-check">
                             
                             <p id="pop-over-content" class="pop-over-content hide">You no longer need to enter a password every time you use the site</p>
 
@@ -44,25 +52,32 @@
                                 <p id="hover-memory">Remember My Password</p>
                             </div>
                             
-                            <button type="submit" class="btn-login">Login</button>
+                            <button class="btn-login" id="submitLogin">Login</button>
                         </label>
-
-                        
                     </form>
                 </div>
 
 
 
                 <div class="register-form">
-                    <form action="">
+                    <form id="registerForm">
                         <h5>Register</h5>
                         <p>Email</p>
-                        <input type="email" name="userEmail" id="userEmail" class="register-form-input"  >
+                        <input  type="email" 
+                                name="registerUserEmail" 
+                                id="registerUserEmail" 
+                                class="register-form-input"  >
                         <p>User Name</p>
-                        <input type="text" name="userName" id="userName" class="register-form-input" >
+                        <input  type="text" 
+                                name="registerUserName" 
+                                id="registerUserName" 
+                                class="register-form-input" >
                         <p>Password</p>
-                        <input type="password" name="" id="userPassword" class="register-form-input" >
-                        <button type="submit" class="btn-register" id="submitRegister">Register</button>
+                        <input  type="password" 
+                                name="registerUserPassword" 
+                                id="registerUserPassword" 
+                                class="register-form-input" >
+                        <button class="btn-register" id="submitRegister">Register</button>
                     </form>
                 </div>
             </div>
